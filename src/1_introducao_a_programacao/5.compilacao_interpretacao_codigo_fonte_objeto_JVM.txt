@@ -1,0 +1,83 @@
+TIPOS DE CODIGO
+* CODIGO FONTE: 
+ + É aquele escrito pelo programador em linguagem de programação.
+
+Processo de compilação:
+
+                  Compilador:                        Gerador de código:
+|-------------|   compilação        |--------------| construção (build)  |------------------|      |----------|
+|Código fonte | =================>  |Código objeto | ================>   |Código executável | ===> | Execução |
+|-------------| análise lexica      |--------------| geraçao de codigo   |------------------|      |----------|        
+                      + 
+               análise sintatica
+
+Essa abordagem é tipicamente usadas pelos linguagem C e C++;
+
+
+Processo de interpretação:
+
+                             Interpretador:                        
+|-------------|              interpretação             |----------|
+|Código fonte | =====================================> | Execução |
+|-------------|  análise lexica + análise sintatica    |----------|
+                 + Geração de codigo >> SOB DEMANDA
+
+Essa abordagem é tipicamente usadas pelos linguagem PHP, Javascript, Python E Ruby;
+
+
+
+Abordagem híbrida:
+
+                             Interpretador:                        
+                  Compilador:                        Máquina Virtual:
+|-------------|   precompilação     |--------------|   interpretação    |----------|
+|Código fonte | =================>  |   Bytecode   | ================>  | Execução |
+|-------------| análise lexica      |--------------| geraçao de codigo  |----------|        
+                      +                                 SOB DEMANDA
+               análise sintatica
+
+Essa abordagem é tipicamente usadas pelos linguagem JAVA, C#;
+A maquina Virtual que executa o bytecode java é o JVM (Java Virtual Machine)
+A maquina Virtual que executa o bytecode C# é o Microsft .NET Framework.
+
+
+* Vantagens:
+ + Compilação: 
+  . Velocidade do programa;
+  . Auxilio do compilador antes da execução;
+
+ + Interpretação:
+  . flexibilidade de manutenção do aplicativo em produção;
+  . Expressividade da linguagem;
+  . Código fonte não precisa ser recompilado para rodar em plataformas diferentes;
+
+ + Abordagem híbrida:
+  . Velocidade do programa (parcialmente aproveitadas);
+  . Auxilio do compilador antes da execução (muito bem aproveitadas);
+  . flexibilidade de manutenção do aplicativo em produção (parcialmente aproveitadas);
+  . Código fonte não precisa ser recompilado para rodar em plataformas diferentes (muito bem aproveitadas);
+
+
+DESENHO ESQUEMÁTICO:
+                                                          |------------------------|
+                                                          |      CODIGO FONTE      |
+                                                          |------------------------|
+
+|---------------------|     |------------------------|    |------------------------|
+|    CODIGO FONTE     |     |     CODIGO FONTE       |    | Bytecode (precompilado)|
+|---------------------|     |------------------------|    |------------------------|
+
+|---------------------|     |------------------------|    |------------------------|
+|  CODIGO EXECUTÁVEL  |     |   CODIGO EXECUTÁVEL    |    |           JVM          |
+| Especifico p/ o S.O.|     |   Especifico p/ o S.O. |    |   Especifico p/ o S.O. |
+|---------------------|     |------------------------|    |------------------------|
+
+|---------------------|     |------------------------|    |------------------------|
+| Sistema Operacional |     |   Sistema Operacional  |    |   Sistema Operacional  |
+|---------------------|     |------------------------|    |------------------------|
+
+|---------------------|     |------------------------|    |------------------------|
+|       Hardware      |     |         Hardware       |    |         Hardware       |
+|---------------------|     |------------------------|    |------------------------|
+       C / C++                PHP, PYTHON, JAVASCRIPT             JAVA, C#
+

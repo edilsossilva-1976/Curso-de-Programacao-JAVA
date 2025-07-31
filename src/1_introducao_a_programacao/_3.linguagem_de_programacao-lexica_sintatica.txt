@@ -1,0 +1,115 @@
+LINGUAGEM DE PROGRAMAÇÃO
+
+É um conjunto de regras léxicas (ortografia) e sintáticas (gramática) para se escrever programas.
+
+* LÉXICA:
+ + Diz respeito à correção das palavras "isoladas" (ortografia).
+
+Exemplo: 
+ + Em portugues:                                                       + Em linguagem de programação: 
+  cachorro < é diferente de > caxorro                                   main < é diferente de > maim
+
+* SINTÁTICA:
+ + Diz respeito à correção de sentenças (gramática)
+
+Exemplo:
++ Em portugues:                                                         + Em linguagem de programação:
+ O cachorro está com fome < é diferente de > A cachorro está com fome.   x = 2 + y; < é diferente de > x = +2y; (errada)
+
+ 
+ EXEMPLOS DE LINGUAGENS DE PROGRAMAÇÃO:
+    C, PASCAL, C++, JAVA, C#, PYTHON, RUBY, PHP, JAVASCRIPT, ETC.
+
+
+EXEMPLO DE UM PROGRAMA
++ Suponha um programa que solicita do usuário dois numeros e depois mostra a média aritmetica deles:
+|-----------------------|
+| Digite o 1º numero: 3 |
+| Digite o 2º numero: 6 |
+|                       |
+| Média: 4.5            |
+|-----------------------|
+
+
+SOLUÇÃO EM LINGUAGEM C:
+#include <stdio.h>
+
+int main(){
+    double x, y, media;
+
+    printf("Digite o primeiro numero: ");
+    scanf("%lf", &x);
+
+    printf("Digite o primeiro numero: ");
+    scanf("%lf", &y);
+
+    media = (x + y)/2.0;
+
+    printf("Media = %.1f\n", media);
+    return 0;
+}
+
+
+SOLUÇÃO EM LINGUAGEM C++:
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    double x, y, media;
+
+    cout<<"Digite o primeiro numero: ";
+    cin >> x;
+
+    cout<<"Digite o segundo numero: ";
+    cin >> y;
+
+    media = (x + y)/2.0;
+
+    cout << "Media = %.1f\n" << media << endl;
+    return 0;
+}
+
+
+SOLUÇÃO EM LINGUAGEM C#:
+using System;
+
+namespace programa{
+    class Program{
+        static void Main(String[] args){
+            double x, y, media;
+
+            Console.Write("Digite o primeiro numero: ");
+            x = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o segundo numero: ");
+            y = double.Parse(Console.ReadLine());
+
+            media = (x + y)/ 2.0;
+            Console.WriteLine("Média = " + media);
+        }
+    }
+    
+}
+
+
+SOLUÇÃO EM LINGUAGEM JAVA:
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){,
+        Scanner sc = new Scanner(System.in);
+        double x, y, media;
+
+        System.out.println("Digite o primeiro numero: ");
+        x = sc.nextDouble();
+
+        System.out.println("Digite o segundo numero: ");
+        y = sc.nextDouble();
+
+        media = (x + y)/ 2.0;
+        System.out.println("Média = " + media);
+
+        sc.close();
+    }
+}

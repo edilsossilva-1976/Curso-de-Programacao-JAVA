@@ -1,0 +1,13 @@
+Para criar programas de computador, vamos precisar de...
+
+* Uma linguagem de programação: 
+ + Regras léxicas e sintáticas para se escrever o programa;
+
+* Uma IDE: 
+ + Software para editar e testar o programa;
+
+* Um compilador:
+ + Software para transformar o código fonte em código objeto;
+ 
+* Um gerador de código ou máquina virtual: 
+ + Software que permite que o programa seja executado

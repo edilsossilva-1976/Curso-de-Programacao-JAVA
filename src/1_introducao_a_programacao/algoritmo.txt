@@ -1,0 +1,35 @@
+ALGORITMO
+
+Sequencia finita de instruções para se resolver um problema.
+* Aplica-se a diversas áreas de conhecimento
+
+
+AUTOMAÇÃO
+
+Consiste em utilizar maquina(s) para executar o procedimento 
+desejado de forma automática ou semiautomática.
+
+
+COMPUTADOR
+
+* Hardware - parte física (a máquina em si)
+
+* Software - parte lógica (programas)
+ + Sistema operacional (Windows, Linux, Mac)
+ + Aplicativos (apps de escritório, app de camera, navegador web)
+ + Jogos
+ + Utilitários (Antivirus, compactador de arquivos)
+ + Outros
+
+
+PROGRAMA ~ ALGORITMO
+
+Programas de computador são algoritmos executados pelo computador (em linhas gerais).
+
+
+CONCLUSÃO: O computador é a máquina que automatiza a execução de algoritmos.
+
+Qualquer algoritmo? Não. Apenas algoritmos computacionais:
+ + Processamento de dados;
+ + Cálculos;
+

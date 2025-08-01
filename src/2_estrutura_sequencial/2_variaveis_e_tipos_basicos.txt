@@ -1,0 +1,100 @@
+VISÃO GERAL
+
+Um programa de computador em  execução lida com dados e esses dados sao armazenados em variáveis.
+
+Em programação, uma variavel é uma porção de memória (RAM) utilizada para armazenar dados durante a execução dos programas.
+
+Desenho esquemático:
+|---------------------------------------|
+|             MEMÓRIA RAM:              |
+| |------|   |----------|  |---------|  |
+| |  3   |   |  5000.0  |  | "MARIA" |  |
+| |------|   |----------|  |---------|  |
+|    X          SALARIO        NOME     |
+|---------------------------------------|
+
+Uma variável para existir, antes ela tem que ser declarada.
+
+DECLARAÇÃO DE VARIAVEIS:
+
+Sintaxe (a forma correta de escrever em JAVA):
+<tipo> <nome>; 
+
+exemplo de declaração de variaveis:
+int idade; (lê - se: variavel idade do tipo inteiro (numeros))
+float altura; (lê - se: variavel altura do tipo float(numeros de ponto flutuante))
+String logradouro; (lê - se: variavel logradouro do tipo String (caracteres/texto)) 
+
+
+Desenho esquemático das variaveis de exemplo:
+|-----------------------------------------|
+|             MEMÓRIA RAM:                |
+|  |------|   |----------|  |-----------| |
+|  |      |   |          |  |           | |
+|  |------|   |----------|  |-----------| |
+|   idade        altura       logradouro  |
+|-----------------------------------------|
+
+Uma variavel possui:
++ Nome (identificador)
++ Tipo
++ Valor
++ Endereço (de memória)
+
+Exemplo de declaração e atribuição de valores;
+int idade = 12;
+float altura = 1.56f;
+String texto = "Ola";
+
+Tipos de variaveis em JAVA:
+    * TIPOS PRIMITIVOS (armazenam diretamente o valor)
+        + byte: Representa números inteiros de 8 bits, com valores de -128 a 127 - valor padrão = 0. 
+        + short: Representa números inteiros de 16 bits, com valores de -32.768 a 32.767 - valor padrão = 0. 
+        + int: Representa números inteiros de 32 bits, com valores de -2.147.483.648 a 2.147.483.647 - valor padrão = 0. 
+        + long: Representa números inteiros de 64 bits, com valores maiores - valor padrão = 0L. 
+        + float: Representa números de ponto flutuante de precisão simples de 32 bits - valor padrão = 0f. 
+        + double: Representa números de ponto flutuante de dupla precisão de 64 bits, mais preciso que float - valor padrão = 0. 
+        + char: Representa um único caractere Unicode - valor padrão = ''. 
+        + boolean: Representa um valor lógico, podendo ser true ou false - valor padrão = false. 
+
+    * String: Representa uma classe auxiliar que armazena textos. - valor padrão = "";
+
+    * Tipos de Referência (armazenam o endereço de um objeto na memoria):
+        + Classes e Interfaces: Representam estruturas de dados mais complexas, como String, Arrays, e outras classes definidas pelo usuário. 
+        + Arrays: Estruturas que armazenam coleções de elementos do mesmo tipo. 
+        + Tipos definidos pelo usuário: Classes criadas para representar entidades específicas do seu programa. 
+
+
+Além da classificação em tipos primitivos e de referência, as variáveis em Java também podem ser categorizadas por seu escopo:
+    + Variáveis locais: 
+        Declaradas dentro de um método ou bloco de código e só podem ser acessadas dentro desse escopo.
+    + Variáveis de instância:
+        Declaradas dentro de uma classe, mas fora de qualquer método, e pertencem a uma instância específica da classe.
+    + Variáveis estáticas (de classe):
+        Declaradas com o modificador static e pertencem à classe, não a uma instância específica, sendo compartilhadas por todas as instâncias da classe. 
+
+Entender os diferentes tipos de variáveis em Java é fundamental para escrever código correto, eficiente e que utilize a memória de forma otimizada. 
+
+
+NOMEAÇÃO DE VARIAVEIS:
+Em Java, nomes de variáveis devem seguir certas regras e convenções para garantir a clareza e a legibilidade do código. 
+Variáveis devem começar com:
+ - uma letra, 
+ - sublinhado (_) ou cifrão ($). 
+
+Regras e Convenções:
+    Início: Nomes de variáveis devem começar com uma letra, sublinhado (_) ou cifrão ($). 
+    Conteúdo: Após o primeiro caractere, podem conter letras, dígitos, sublinhados e cifrões. 
+    Estilo: É recomendado iniciar com letra minúscula e usar camelCase para nomes compostos por múltiplas palavras, como nomeDoAluno. 
+    Case-sensitive: O Java diferencia maiúsculas de minúsculas, então idade e Idade são consideradas variáveis diferentes. 
+    Palavras reservadas: Não podem ser usadas como nomes de variáveis (ex: int, class). 
+    Evite: É recomendável evitar nomes que comecem com _ ou $. 
+    Significância: Escolha nomes que indiquem o propósito da variável, como numeroDeAlunos ao invés de apenas num. 
+
+Exemplos errado/correto;
+integer 5minutos; / integer _5minutos; (não iniciar com digitos numericos)
+double salário; / double salario; (não usar acentuação)
+double salário do funcionario; / double salarioDoFuncionario (padrão camelCase); (não pode ter espaços e nem usar acentuação)
+
+
+

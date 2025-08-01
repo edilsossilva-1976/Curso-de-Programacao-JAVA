@@ -6,4 +6,3 @@ public class Primeiro{
         System.out.println("Olá mundo!");
     }
 }
-

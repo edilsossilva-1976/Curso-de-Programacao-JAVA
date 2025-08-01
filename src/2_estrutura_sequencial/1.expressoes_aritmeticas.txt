@@ -1,0 +1,34 @@
+Expressoes Aritmética
+* Sao expressoes que quando avaliados geram como resultado um valor numérico.
+
+<expressao> = resultado=> <valor numerico>
+
+Exemplo: 4 + 5 =resultado=> 9
+
+
+OPERADORES ARITMETICOS:
+|----------|------------------------|  * PRECEDENCIA (Qual operador é feito primeiro em relação aos outros): 
+| Operador |      Significado       |   . 1º Lugar: ^
+|----------|------------------------|   . 2º Lugar: *, /, %
+|    +     |       ADIÇÃO           |   . 3º Lugar: +, -
+|    -     |     SUBTRAÇÃO          |
+|    *     |   MULTIPLICAÇÃO        |
+|    /     |       DIVISÃO          |
+|    %     | RESTO DA DIVISAO (mod) |
+|    ^     |    POTENCIAÇÃO (real)  | 
+|----------|------------------------|
+
+ - Exemplos de operadores aritmeticos:
+  . 2 * 6 / 3        resultado =   4 -- mesma precedencia, leitura da esquerda pra direita
+  . 3 + 2 * 4        resultado =  11 -- calcule primeiro o produto, depois a soma;
+  . (3 + 2) * 4      resultado =  20 -- calcule primeiro a soma, depois a multiplicação;
+  . 2 * 3 ^ 4        resultado = 162 -- calcule primeiro a potenciação, depois o produto;
+  . 60/(3 + 2) * 4   resultado =  48 -- calcule primeiro a soma nos parenteses, depois a divisao pelo resultado da soma e por ultimo a multiplicação;
+  . 60/((3 + 2) * 4) resultado =   3 -- calcule primeiro a soma nos parenteses mais internos, depois a multiplicação no proximo parenteses e por ultimo a divisão;
+
+ - Exemplos com o operador MOD (%):
+  . 14 % 3 resultado = 2   ==> 14:3 = 4 resto 2, portanto 14 % 3 = 2 
+  . 19 % 5 resultado = 3   ==> 19:5 = 3 resto 4, portanto 19 % 5 = 4 
+
+
+ 

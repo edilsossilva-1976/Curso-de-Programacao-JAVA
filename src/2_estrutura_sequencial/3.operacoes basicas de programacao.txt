@@ -1,0 +1,20 @@
+AS TRES OPERAÇÕES BÁSICAS DE PROGRAMAÇÃO 
+
+Um programa de computador é capaz de realizar essencialmente 3 operações:
+
+- ENTRADA DE DADOS;
+    É quando o usuário informa dados para o programa enviando variaveis declaradas por meio de um dispositivo de entrada (teclado).
+    Essa operação também é chamada e LEITURA (O programa está lendo dados).
+
+- PROCESSAMENTO DE DADOS;
+    É quando o programa realiza calculos. Os dados armazenados em variaveis podem ser calculados por meio de expressoes.
+    O processamento de dados se dá por um comando chamado ATRIBUIÇAO.
+    
+    exemplo da sintaxe: 
+        media = (x + y)/2.0; (O resultado da expressão (lado direito) será armazenado na variavel media (lado esquerdo).)
+
+- SAÍDA DE DADOS;
+    É quando o programa informa (retorna) informações para o usuário por meio de dispositivos de saída (monitor).
+    Essa operação é também chamada de ESCRITA (O programa está escrevendo dados).
+    exemplo de saida:
+    Seu saldo é R$3.500,00.

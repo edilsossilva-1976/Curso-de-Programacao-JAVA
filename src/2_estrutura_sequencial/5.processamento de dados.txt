@@ -1,0 +1,73 @@
+O processamento é dado pelo comando de atribuição.
+
+Sintaxe: 
+<variavel> = <expressao> lê-se variavel recebe a expressao.
+Quer dizer que o resultado da expressao será armazenado na variavel.
+
+
+EXEMPLO PRATICO:
+1.
+int x, y;
+x = 5;
+y = 2 * x;
+
+System.out.println(x);
+System.out.println(y);
+
+SAIDA:
+5   (numero inteiro)
+10  (numero inteiro)
+----------------------------------------
+
+2.
+int x;
+float y;
+
+x = 5;
+y = 2 * x; (Faixas de numeros do tipo inteiro cabe em uma variavel do tip real.)
+
+System.out.println(x);
+System.out.println(y);
+
+SAIDA:
+5   (numero inteiro)
+10  (numero real)
+----------------------------------------
+
+3.
+float b, B, h, area;
+
+b = 6.0;
+B = 8.0; 
+h = 5.0;
+
+area <- (b + B) / 2.0 * h;
+System.out.println(area);
+
+SAIDA:
+35   
+-----------------------------------------
+
+4.
+int a, b, resultado;
+a = 5;
+b = 2;
+
+resultado = a / b; //Divisao vai gerar um resultado com perdas por ser do tipo inteiro (2)
+System.out.printf("%f",resultado);
+
+Para gerar resultado correto (real), a variavel b ou todas deverão ser do tipo real.
+
+-------------------------------------------
+
+5.
+float a;
+int b;
+
+a = 5.0;
+b = a;
+
+System.out.println(b); //ERRO
+
+Solução:
+b = int(a);

@@ -1,0 +1,97 @@
+Lembrando...
+A saida de dados é a operação que o programa informa dados ao usuario por meio de um dispositivo de saida.
+
+PARA ESCREVER NA TELA UM TEXTO QUALQUER EM JAVA
+
+public class Greetings{
+    public static void main(String[] args){
+        //Sem quebra de linha no final:
+        System.out.print("Bom dia!"); //O prompt imprime e posiciona na mesma linha
+
+        //Com quebra de linha no final:
+        System.out.println("Bom noite!"); //O prompt imprime e posiciona na linha abaixo
+    }
+}
+
+SAÍDA: 
+Bom dia!Boa noite!
+| 
+A saída acima mostra que o primerio comando imprime a mensagem. A segunda mensagem foi impressa na mesma linha,
+logo a frente, só que com uma quebra de linha (prompt posicionado abaixo da segunda mensagem)
+
+
+EXEMPLO DE SAIDA DE DADOS COM VARIAVEIS
+
+public class TesteSaida{
+    public static void main(String[] args){
+        int idade;
+        double altura;
+        String mensagem;
+        //acima, declaração de VARIAVEIS (porções de memoria RAM sao alocados)
+
+        idade = 21;
+        altura = 1.62;
+        mensagem = "Vai dar certo";
+        double salario = 2000.0; //declaração e atribuição na mesma linha
+        boolean status = true; //declaração e atribuição na mesma linha
+        //acima atribuição de valores a VARIAVEIS (variaveis são populadas com valores)
+
+        System.out.println("A idade é: "+ idade); //SAIDA: "A idade é: 21"
+        System.out.println("A altura é: "+ altura); //SAIDA: "A altura é: 1.62"
+        System.out.println("A mensagem é: "+ mensagem); //SAIDA: "A mensagem é: Vai dar certo"
+        System.out.println("O salario é: "+ salario); //SAIDA: "O salario é: 2000.0"
+        System.out.println("Status da conta: "+ status); //SAIDA: "Status da conta: true"
+
+        System.out.println("Joao tem "+ idade +" anos de idade. Sua altura é de " + altura + "metros.");
+
+        System.out.printf("Joao tem %d anos de idade. Sua altura é de %f metros.", idade, altura); //outra forma
+    }
+}
+
+
+EXERCICIO DE FIXAÇÃO:
+Crie na memória as seguintes variaveis:
+|------------------------------------------------------------|
+| |--------------| |--------------| |---------| |---------|  |
+| | "computador" | |     "TV"     | | 21000.5 | |  1830.0 |  |
+| |--------------| |--------------| |---------| |---------|  |
+|     produto1         produto2        preco1      preco2    |
+|                                                            |
+| |-------|   |-------|   |-------|                          |
+| |   30  |   | 5291  |   |  'F'  |                          |
+| |-------|   |-------|   |-------|                          |
+|   idade       codigo      genero                           |
+|------------------------------------------------------------|
+
+EM SEGUIDA, USANDO OS VALORES DAS VARIAVEIS, PRODUZA A SEGUINTE SAIDA NA TELA:
+
+Produtos:
+O produto Computador custa R$ 2100.50.
+O produto TV custa R$ 1830.00.
+
+Codigo = 5291.
+
+Dados da pessoa: genero F e idade 30.
+
+
+RESOLUÇÃO DO EXERCICIO:
+public class Produto{
+    public static void main(String[] args){
+        
+        String produto1 = "Computador";
+        String produto2 = "TV";
+        double preco1 = 2100.5;
+        double preco2 = 1830.0;
+        int idade = 30;
+        int codigo = 5291;
+        char genero = 'F';
+
+        System.out.println("Produtos:");
+        System.out.printf("O Produto %s custa R$ %.2f%n.", produto1, preco1);
+        System.out.printf("O Produto %s custa R$ %.2f%n.", produto2, preco2);
+        System.out.println();
+        System.out.printf("Codigo = %d%n", codigo);
+        System.out.println();
+        System.out.printf("Dados da pessoa: genero %s e idade %d%n", genero, idade);
+    }
+}

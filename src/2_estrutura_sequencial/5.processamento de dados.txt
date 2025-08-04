@@ -31,21 +31,21 @@ System.out.println(y);
 
 SAIDA:
 5   (numero inteiro)
-10  (numero real)
+10.0  (numero real)
 ----------------------------------------
 
-3.
+3.Area do trapezio
 float b, B, h, area;
 
 b = 6.0;
 B = 8.0; 
 h = 5.0;
 
-area <- (b + B) / 2.0 * h;
+area = (b + B) / 2.0 * h;
 System.out.println(area);
 
 SAIDA:
-35   
+35.0
 -----------------------------------------
 
 4.
@@ -54,7 +54,7 @@ a = 5;
 b = 2;
 
 resultado = a / b; //Divisao vai gerar um resultado com perdas por ser do tipo inteiro (2)
-System.out.printf("%f",resultado);
+System.out.printf("%d",resultado);
 
 Para gerar resultado correto (real), a variavel b ou todas deverão ser do tipo real.
 

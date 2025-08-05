@@ -34,6 +34,7 @@ public class Terreno {
         System.out.printf("Área do terreno: %f%n", areaTerreno);
         System.out.printf("Preço do terreno: %f%n", precoTerreno);
         
+        input.close();
     }
 
 }

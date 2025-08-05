@@ -1,0 +1,77 @@
+public class funcoesMatematicas{
+    public static void main(String[] args){
+        
+        double a,x;
+
+        a=0; 
+        x = 9;
+
+        //Função raiz quadrada em JAVA (variavel recebe raiz quadrada de x)
+        a = Math.sqrt(x);
+        System.out.println(a);
+
+        //Função Exponenciação em JAVA (variavel recebe x elevado ao quadrado)
+        a = Math.pow(x,2);
+        System.out.println(a);
+
+        //Função PI (variavel recebe o valor de pi "3.14159")
+        a = Math.PI();
+        System.out.println(a);
+
+        //Função ABSOLUTE (variavel recebe valor absoluto (sem sinal))
+        a = Math.abs(-25);
+        System.out.println(a);
+
+    }
+}
+
+SAIDA:
+3
+81
+3.14159
+25
+
+------------------------------------------------------------------------------------------
+Acima está algumas funções matematicas da linguagem java.
+
+Em Java, a classe Math do pacote java.lang fornece diversas funções matemáticas. 
+Essas funções incluem operações trigonométricas, logarítmicas, exponenciais, de arredondamento, entre outras. 
+A classe é estática, então seus métodos são acessados diretamente através do nome da classe, sem necessidade de criar uma instância.
+
+Funções Trigonométricas:
+Math.sin(double a): Retorna o seno do ângulo a (em radianos). 
+Math.cos(double a): Retorna o cosseno do ângulo a (em radianos). 
+Math.tan(double a): Retorna a tangente do ângulo a (em radianos). 
+Math.asin(double a): Retorna o arco seno de a (em radianos). 
+Math.acos(double a): Retorna o arco cosseno de a (em radianos). 
+Math.atan(double a): Retorna o arco tangente de a (em radianos). 
+Math.atan2(double y, double x): Converte coordenadas retangulares (x, y) para coordenadas polares (r, θ) e retorna o ângulo θ (em radianos). 
+
+Funções Exponenciais e Logarítmicas:
+Math.exp(double a): Retorna e elevado à potência de a (onde e é a base do logaritmo natural). 
+Math.log(double a): Retorna o logaritmo natural de a. 
+Math.log10(double a): Retorna o logaritmo na base 10 de a. 
+Math.sqrt(double a): Retorna a raiz quadrada de a. 
+Math.cbrt(double a): Retorna a raiz cúbica de a. 
+Math.pow(double a, double b): Retorna a elevado à potência b. 
+
+Outras Funções Matemáticas:
+Math.abs(double a): Retorna o valor absoluto de a. 
+Math.ceil(double a): Arredonda a para cima para o inteiro mais próximo. 
+Math.floor(double a): Arredonda a para baixo para o inteiro mais próximo. 
+Math.round(double a): Arredonda a para o inteiro mais próximo. 
+Math.max(double a, double b): Retorna o maior valor entre a e b. 
+Math.min(double a, double b): Retorna o menor valor entre a e b. 
+Math.random(): Retorna um valor double aleatório entre 0.0 (inclusive) e 1.0 (exclusivo). 
+Math.signum(double a): Retorna o sinal de a (1 se positivo, -1 se negativo, 0 se zero). 
+Math.ulp(double a): Retorna a unidade em relação ao ponto flutuante de a. 
+
+
+EXEMPLO DE FORMULA DE BASKARAS:
+a = 2, b = 1; c = 1; x = 0;
+delta = Math.pow(b,2)-4*a*c;
+
+x1 = (-b + Math.sqrt(delta))/(2.0*a);
+x2 = (-b - Math.sqrt(delta))/(2.0*a);
+
+

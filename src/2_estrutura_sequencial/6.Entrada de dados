@@ -1,0 +1,58 @@
+ENTRADA DE DADOS:
+
+É quando o usuario informa dados para o programa por meio de um dispositivo de 
+entrada como o teclado.
+Esses dados serão armazenados em uma variavel.
+Também chamado de leitura, o programa está lendo dados.
+
+A classe Scanner em Java, pertencente ao pacote java.util, é utilizada para analisar dados de entrada, 
+como inteiros, números de ponto flutuante e strings, a partir de diferentes fontes, como o console ou arquivos.
+Ela oferece métodos para ler esses tipos de dados de forma eficiente e amigável.
+
+public class leitura{
+    public static void main(String[] args){
+        Scanner entradaDados = new Scanner(System.in);
+        int idade;
+
+        System.out.println("Digite a sua idade: ");
+        idade = entradaDados.nextInt();
+
+        System.out.printf("Voce Digitou: %d\n", idade);
+    }
+}
+
+Saida:
+Digite a sua idade: 43 [enter]
+Voce digitou 43
+
+--------------------------------------------------------------------------------
+
+public class leitura{
+    public static void main(String[] args){
+
+        //variaveis
+        Scanner entradaDados = new Scanner(System.in);
+        int idade;
+        double salario1, salario2;
+        String nome;
+
+        //inputs
+        System.out.print("Digite o seu nome: ");
+        nome = entradaDados.nextLine();
+
+        System.out.print("Digite a sua idade: ");
+        idade = entradaDados.nextInt();
+
+        System.out.print("Quanto ganhou nos ultimos 2 meses? ");
+        salario1 = entradaDados.nextDouble();
+        salario2 = entradaDados.nextDouble();
+
+        //Saidas
+        System.out.println("DADOS DIGITADOS: ");
+        System.out.printf("NOME: %s%n", nome);
+        System.out.printf("IDADE: %s%n", idade);
+        System.out.printf("SALARIO1: %s%n", salario1);
+        System.out.printf("SALARIO 2: %s%n", salario2);
+
+    }
+}

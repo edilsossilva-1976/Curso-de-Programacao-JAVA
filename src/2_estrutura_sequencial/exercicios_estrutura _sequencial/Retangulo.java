@@ -29,5 +29,7 @@ public class Retangulo {
         System.out.printf("Perimetro: %.4f%n", perimetro);
         System.out.printf("Diagonal: %.4f%n", diagonal);
 
+        input.close();
+
     }
 }

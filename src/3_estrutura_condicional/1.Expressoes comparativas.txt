@@ -1,0 +1,32 @@
+EXPRESSÃO COMPARATIVAS:
+
+Em Java, as instruções comparativas são usadas para verificar relações entre valores e 
+retornar um resultado booleano (verdadeiro ou falso). 
+Essas instruções são cruciais para o controle de fluxo em programas, permitindo que diferentes 
+blocos de código sejam executados com base em condições. 
+
+<expressao> => (resulta em) valor verdade (booleano);
+5 > 10 = falso
+
+
+Os principais operadores de comparação em Java são: 
+* == (igual a): Verifica se dois valores são iguais.
+* != (diferente de): Verifica se dois valores são diferentes.
+* > (maior que): Verifica se o valor à esquerda é maior que o valor à direita.
+* < (menor que): Verifica se o valor à esquerda é menor que o valor à direita.
+* >= (maior ou igual a): Verifica se o valor à esquerda é maior ou igual ao valor à direita.
+* <= (menor ou igual a): Verifica se o valor à esquerda é menor ou igual ao valor à direita.
+
+    Além desses operadores, o método equals() é usado para comparar o conteúdo de objetos (como Strings), 
+enquanto o operador == compara referências de objetos (se apontam para o mesmo local na memória). 
+
+
+EXEMPLO DE OPERAÇÕES COMPARATIVAS:
+
+Suponha x igual 5.
+X > 0; Resultado V;
+X = 3; Resultado F;
+10 <= 30; Resultado V;
+X != 2; Resultado V;
+
+

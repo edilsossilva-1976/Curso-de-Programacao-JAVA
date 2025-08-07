@@ -159,3 +159,5 @@ TABELA VERDADE DO OPERADOR "! (not / não)"
 |  V  | F | 
 -----------
 
+Entender e usar corretamente as expressões lógicas é fundamental para criar programas Java que 
+tomem decisões baseadas em condições, controlando o fluxo de execução do código. 

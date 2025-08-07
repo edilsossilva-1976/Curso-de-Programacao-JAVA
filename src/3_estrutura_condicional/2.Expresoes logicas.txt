@@ -1,0 +1,161 @@
+EXPRESSOES LOGICAS
+
+Em Java, expressões lógicas são usadas para avaliar condições e produzir um resultado booleano (verdadeiro ou falso). 
+Elas são formadas por operadores lógicos e relacionais, que combinam variáveis, valores e outras expressões. 
+
+<expressao> = <valor verdade>
+x = 2; x > 10 false;
+
+As expressoes logicas podem unir mais de uma condição utilizando os operadores logicos;
+
+OPERADORES LOGICOS (&&(and/e), ||(or/ou), !(not/não)):
+
+&& - Verdadeiro se todas as condições forem verdadeiras;
+|| - Verdadeiro se pelo menos uma condição for verdadeiro;
+!  - Verdadeiro se a condição for falsa;
+
+Operadores Relacionais:
+== (igualdade): Verifica se dois valores são iguais. Exemplo: (a == b). 
+!= (diferença): Verifica se dois valores são diferentes. Exemplo: (a != b). 
+< (menor que): Verifica se o valor da esquerda é menor que o da direita. Exemplo: (a < b). 
+>: (maior que):** Verifica se o valor da esquerda é maior que o da direita. Exemplo: (a > b). 
+<= (menor ou igual): Verifica se o valor da esquerda é menor ou igual ao da direita. Exemplo: (a <= b). 
+>= (maior ou igual): Verifica se o valor da esquerda é maior ou igual ao da direita. Exemplo: (a >= b)
+
+
+PRECEDENCIA DE OPERADORES:
+Assim como em matemática, Java possui uma ordem de precedência para a avaliação de operadores. 
+É importante conhecer essa ordem para garantir que as expressões sejam avaliadas corretamente. 
+A precedência segue a seguinte ordem, da mais alta para a mais baixa: 
+
+1º. Parênteses: ()
+2º. Unários: +, -, !, ++, --
+3º. Multiplicativos: *, /, %
+4º. Aditivos: +, -
+5º. Deslocamento: <<, >>, >>>
+6º. Relacionais: <, >, <=, >=, ==, !=
+7º. AND bit a bit: &
+8º. XOR bit a bit: ^
+9º. OR bit a bit: |
+10º. AND lógico: &&
+11º. OR lógico: ||
+12º. Condicional (ternário): ?:
+13º. Atribuição: =, +=, -=, *=, /=, %=
+
+OPERADORES TERNARIOS:
+O operador ternário (?:) é uma forma compacta de escrever expressões condicionais. 
+Sintaxe: condição ? expressão1 : expressão2. 
+Se a condição for verdadeira, a expressão1 é avaliada; caso contrário, a expressão2 é avaliada. 
+
+Exemplo:
+int numero = 10;
+String mensagem = (numero % 2 == 0)?"Par" : "Impar";
+SAÍDA: Par
+
+
+IDEIA POR TRÁS DO OPERADOR &&
+- Voce pode obter uma habilitação de motorista se:
+ * for aprovado no exame tecnico, &&
+ * for aprovado no exame de legislação, &&
+ * for aprovado no exame de direção.
+
+  *** TODAS AS CONDIÇÕES DEVEM SER VERDADEIRAS ***
+
+Exemplo de expressoes logicas:
+suponha x = 5,
+
+(x <= 20) && (x == 10); // Toda a expressao é FALSA (V && F = F)
+|-- V --|    |-- F --|
+
+(x > 0) && (x != 3); // Toda a expressao é VERDADEIRA (V && V = V)
+|-- V --|  |-- V --|
+
+(x <= 0) && (x == 10) && (X != 3); // Toda a expressao é FALSA (V && V && F = F)
+|-- V --|   |-- F --|    |-- V --|
+
+
+TABELA VERDADE DO OPERADOR "&&"
+--------------------
+|  A  | B | A && B |
+--------------------
+|  F  | F |   F    |
+--------------------
+|  F  | V |   F    |
+--------------------
+|  V  | F |   F    |
+--------------------
+|  V  | V |   V    |
+--------------------
+
+
+IDEIA POR TRÁS DO OPERADOR || (or / ou)
+- Voce pode estacionar na vaga especial se:
+ * for idoso, ||
+ * for uma pessoa com deficiencia, ||
+ * for uma gestante.
+
+*** PELO MENOS 1 DAS CONDIÇÕES DEVEM SER VERDADEIRAS ***
+
+Exemplo de expressoes logicas:
+suponha x = 5,
+
+(x = 10) || (x <= 20); // Toda a expressao é Verdadeira (F || V = V)
+|- F -|     |-- V --|
+
+(x > 0) || (x != 3); // Toda a expressao é Verdadeira (V || V = V)
+|- V -|    |- V -|
+
+(x <= 0) || (x != 3) || (X != 5); // Toda a expressao é Verdadeira (F || V || F = V)
+|-- F --|   |-- V --|   |-- F --|
+
+
+TABELA VERDADE DO OPERADOR "||"
+--------------------
+|  A  | B | A && B |
+--------------------
+|  F  | F |   F    |
+--------------------
+|  F  | V |   V    |
+--------------------
+|  V  | F |   V    |
+--------------------
+|  V  | V |   V    |
+--------------------
+
+
+IDEIA POR TRÁS DO OPERADOR ! (not / não)
+- Voce tem direito a receber uma bolsa de estudos se voce:
+ !
+  * possuir renda maior que R$3000.00
+
+ - João recebe R$5000.00 e José recebe R$2000.00.
+ - João não ganha a bolsa, pois a renda é maior;
+ - José recebe a bolsa, pois sua renda é menor;
+
+*** O OPERADOR ! INVERTE A CONDIÇÃO DAS EXPRESSOES ***
+
+
+Exemplo de expressoes logicas:
+suponha x = 5,
+
+!(x = 10); // Toda a expressao é Verdadeira (!F = V)
+|- V -| 
+
+!(x >= 2); // Toda a expressao é Verdadeira (!V = F)
+ |- V -|
+
+!((x <= 20) && (x == 10)); // Toda a expressao é Verdadeira (!F = V)
+  |-- V --|    |-- F --|    
+  |--------- F --------|
+
+
+
+TABELA VERDADE DO OPERADOR "! (not / não)"
+------------
+|  A  | !A|
+-----------
+|  F  | V |
+-----------
+|  V  | F | 
+-----------
+
